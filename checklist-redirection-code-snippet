@@ -1,0 +1,10 @@
+    <script>
+      (function () {
+        window.addEventListener('message', function (event) {
+          if (event.data.TYPE === 'KOMPASSIFY_CUSTOM_REDIRECTION') {
+            var megaUsername = window.location.hostname.split('.')[0];
+            window.location.href = "https://" + megaUsername + ".megaexams.com/admin/";
+          }
+        });
+      })();
+    </script>
